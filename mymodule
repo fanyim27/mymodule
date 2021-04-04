@@ -1,0 +1,48 @@
+###Square of a number:
+import math
+def square(a):
+  x = math.sqrt(a)
+  return(x)
+
+
+def absolute(a):
+  x = abs(a)
+  return(x)
+
+def minimun(liste):
+  x = min(liste)
+  return(x)
+
+###maximun of the list
+def maxi(liste):
+  y = max(liste)
+  return(y)
+
+
+import math
+def factorial(a):
+  return(math.factorial(a))
+
+
+##average of a list
+def average(liste):
+  avg_value = sum(list_of_values) / len(list_of_values)
+  print(avg_value)
+
+
+def mode(n_num):
+  n_num = []
+  n = len(n_num)
+  data = Counter(n_num)
+  get_mode = dict(data)
+  mode = [k for k, v in get_mode.items() if v == max(list(data.values()))]
+  
+  if len(mode) == n:
+    get_mode = "No mode found"
+  else:
+    get_mode = "Mode is / are: " + ', '.join(map(str, mode))
+      
+
+def cubenumber(number):
+  cube = number * number * number
+  return(cube)
